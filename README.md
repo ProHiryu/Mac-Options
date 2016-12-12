@@ -2,7 +2,7 @@
 
 Record some Mac options
 
----
+--------------------------------------------------------------------------------
 
 _just record in case of something_
 
@@ -25,7 +25,7 @@ _just record in case of something_
 
 <!-- more -->
 
-# Google Chrome
+ # Google Chrome
 
 [Chrome](https://www.google.com/chrome/browser/desktop/index.html "chrme") If you dont need the plugins for chrome, i really recommend you to laern to use the safari, it's much well compatible for Mac
 
@@ -172,3 +172,51 @@ more shortcut just go to settings ![](https://raw.githubusercontent.com/nieweido
 - `sudo easy_install pip`
 - [Python 3.5.2](https://www.python.org)
 - `pip3 install xxxxx`
+
+# Git
+
+> Git is a very important part for programmer
+
+- [Git Download](https://git-scm.com/download/mac)
+- `$ cd ~/.ssh`
+- `$ ls`
+- `$ ssh-keygen -t rsa -C "your-email-address@xxx.com" //press enter`
+- `$ vim id_rsa.pub`
+- copy the content in id_rsa.pub
+- Account Setting -> GitHub Account Setting -> SSH Keys -> Add SSH key -> paste key
+- `$ ssh -T git@github.com`
+- If shows "HiXXX! You've successfully authenticated, but GitHub does not provide shell access."" Congratulations!
+- `$ git config --global user.name "XXXX" //your Account`
+- `$ git config --global user.email "XXX@XXX.com"</span>`
+
+# Hexo
+
+- [node.js download](https://nodejs.org/zh-cn/)
+- `$ npm install hexo --no-optional`
+- `$ cd ~/Hexo`
+- `$ hexo init`
+
+If there is no problem , the folder will be:
+
+```
+.
+├── _config.yml
+├── package.json
+├── scaffolds
+├── scripts
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes
+```
+
+The files which must be saved:
+
+```
+├──_config.yml
+  ├── theme
+  ├── scaffolds #文章模板
+  ├── package.json #说明使用哪些包
+  ├── .gitignore #限定在提交的时候哪些文件可以忽略
+  └── source
+```
